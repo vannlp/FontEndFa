@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.header-logo {
+  text-decoration: none;
+  color: #461a42;
+  font-size: 30px;
+  font-weight: 600;
+}
+.header-logo:hover {
+  color: #461a42;
+}
+.header-nav > li > a {
+  color: #333;
+  font-weight: 600;
+  transition: all 0.1s linear;
+  border-radius: 4px;
+}
+.header-nav > li > a:hover {
+  color: #333;
+  border-bottom: 3px solid #461a42;
+}
+.header-account > .btn:hover {
+  background-color: #eee;
+}
+
+/*# sourceMappingURL=app.css.map */

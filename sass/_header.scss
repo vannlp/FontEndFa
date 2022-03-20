@@ -1,0 +1,38 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  &-logo {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 30px;
+    font-weight: 600;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  // header nav
+
+  &-nav {
+    & > li {
+      & > a {
+        color: $color-back;
+        font-weight: 600;
+        transition: all 0.1s linear;
+        border-radius: 4px;
+        &:hover {
+          color: $color-back;
+          border-bottom: 3px solid $primary-color;
+        }
+      }
+    }
+  }
+
+  &-account {
+    & > .btn {
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+}
