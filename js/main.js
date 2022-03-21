@@ -9,9 +9,7 @@ import { call } from "./controllers/call.js";
 let app = angular.module("myApp", ["ngRoute"]);
 
 app.run(async function($rootScope, $http) {
-    $http.get("http://localhost:3000/products").then(data => {
-        $rootScope.data = data.data
-    })
+    // 
 });
 
 router(app);
