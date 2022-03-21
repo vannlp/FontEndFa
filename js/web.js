@@ -19,6 +19,9 @@ function router(app) {
       }).when("/quiz/:quizId",{
         templateUrl: "./page/quiz-detail.html",
         controller : "quizDetailController"
+      }).when("/quiz/:quizId/take",{
+        templateUrl: "./page/take_quiz.html",
+        controller : "takeQuizController"
       });
   });
 }

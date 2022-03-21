@@ -1,46 +1,167 @@
 {
-    "products":[
+    "users":[
         {
-            "id": 1,
-            "name": "san pham 1",
-            "price": 300
-        },
-        {
-            "id": 2,
-            "name": "san pham 2",
-            "price": 300
-        },
-        {
-            "id": 3,
-            "name": "san pham 3",
-            "price": 300
-        },
-        {
-            "id": 4,
-            "name": "san pham 4",
-            "price": 300
+            "username": "phanvan0322",
+            "email": "phanvan0322@gmail.com",
+            "password": "123456",
+            "name": "Phan Tuong Van",
+            "role": 1 
         }
     ],
-    "about":[
+
+    "subjects":[
+        {
+            "Id": "ADAV",
+            "Name": "Lập trình Android nâng cao",
+            "Logo": "ADAV.jpg"
+        },
+        {
+            "Id": "ADBS",
+            "Name": "Lập trình Android cơ bản",
+            "Logo": "ADBS.jpg"
+        },
+        {
+            "Id": "ADTE",
+            "Name": "Kiểm thử và triển khai ứng dụng Android",
+            "Logo": "ADTE.jpg"
+        },
+        {
+            "Id": "ADUI",
+            "Name": "Thiết kế giao diện trên Android",
+            "Logo": "ADUI.jpg"
+        },
+        {
+            "Id": "ASNE",
+            "Name": "Lập trình ASP.NET",
+            "Logo": "ASNE.png"
+        },
+        {
+            "Id": "CLCO",
+            "Name": "Điện toán đám mây",
+            "Logo": "CLCO.jpg"
+        },
+        {
+            "Id": "DBAV",
+            "Name": "SQL Server",
+            "Logo": "DBAV.png"
+        },
+        {
+            "Id": "DBBS",
+            "Name": "Cơ sở dữ liệu",
+            "Logo": "DBBS.png"
+        },
+        {
+            "Id": "GAME",
+            "Name": "Lập trình game 2D",
+            "Logo": "GAME.png"
+        },
+        {
+            "Id": "HTCS",
+            "Name": "HTML5 và CSS3",
+            "Logo": "HTCS.jpg"
+        },
+        {
+            "Id": "INMA",
+            "Name": "Internet Marketing",
+            "Logo": "INMA.jpg"
+        },
+        {
+            "Id": "JAAV",
+            "Name": "Lập trình Java nâng cao",
+            "Logo": "JAAV.png"
+        },
+        {
+            "Id": "JABS",
+            "Name": "Lập trình hướng đối tượng với Java",
+            "Logo": "JABS.png"
+        },
+        {
+            "Id": "JSPR",
+            "Name": "Lập trình JavaScript",
+            "Logo": "JSPR.png"
+        },
+        {
+            "Id": "LAYO",
+            "Name": "Thiết kế layout",
+            "Logo": "LAYO.jpg"
+        },
+        {
+            "Id": "MOWE",
+            "Name": "Thiết kế web cho điện thoại di động",
+            "Logo": "MOWE.png"
+        },
+        {
+            "Id": "PHPP",
+            "Name": "Lập trình PHP",
+            "Logo": "PHPP.png"
+        },
+        {
+            "Id": "PMAG",
+            "Name": "Quản lý dự án với Agile",
+            "Logo": "PMAG.jpg"
+        },
+        {
+            "Id": "VBPR",
+            "Name": "Lập trình VB.NET",
+            "Logo": "VBPR.png"
+        },
+        {
+            "Id": "WEBU",
+            "Name": "Xây dựng trang web",
+            "Logo": "WEBU.jpg"
+        }
+    ],
+
+    "quizs":[
+        {
+            "name": "Ten bai quiz",
+            "id":1,
+            "subjectId": 1
+        }
+    ],
+
+    "quizDetails":[
         {
             "id": 1,
-            "name": "san pham 4",
-            "price": 300
+            "quizId": 1,
+            "title": "PHP là gì"
+        }
+    ],
+
+    "answerQuizs":[
+        {
+            "id":1,
+            "quizDetailId": 1,
+            "desc": "Ngôn ngữ lập trình",
+            "correct_answer": true
         },
         {
-            "id": 2,
-            "name": "san pham 5",
-            "price": 300
+            "id":2,
+            "quizDetailId": 1,
+            "desc": "Ngôn ngữ loài người",
+            "correct_answer": false
         },
         {
-            "id": 3,
-            "name": "san pham y",
-            "price": 300
+            "id":3,
+            "quizDetailId": 1,
+            "desc": "Ngôn ngữ động vật",
+            "correct_answer": false
         },
         {
-            "id": 4,
-            "name": "san pham 4",
-            "price": 300
+            "id":4,
+            "quizDetailId": 1,
+            "desc": "Ngôn ngữ gì đó",
+            "correct_answer": false
+        }
+    ],
+
+    "quizs_history":[
+        {
+            "id": 1,
+            "quizId": 1,
+            "userId": 1,
+            "point": 10,
+            "created_date": "21/3/2022"
         }
     ]
 }
