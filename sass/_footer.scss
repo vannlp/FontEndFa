@@ -1,0 +1,37 @@
+.footer {
+  background: $primary-color;
+  padding: 30px 0;
+
+  &-left {
+    color: white;
+  }
+  &-logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+    &:hover {
+      color: white;
+    }
+  }
+  &-p {
+    color: #eee;
+  }
+  &-center-item {
+    & a {
+      color: white;
+      padding: 5px 0;
+      display: block;
+    }
+  }
+  &-right {
+    color: white;
+  }
+
+  &-link-img {
+    width: 200px;
+    display: block;
+    margin: 10px 0;
+  }
+}

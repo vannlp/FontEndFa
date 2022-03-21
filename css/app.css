@@ -46,4 +46,113 @@ img {
   background-color: #eee;
 }
 
+@media screen and (max-width: 1000px) {
+  .header nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-account {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+.banner {
+  padding: 20px 0;
+}
+.banner-left {
+  padding-top: 30px;
+}
+.banner-heading {
+  max-width: 400px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #461a42;
+  margin-bottom: 20px;
+}
+.banner-desc {
+  font-size: 17px;
+  color: #9b9999;
+}
+.banner-btn-one {
+  background: #461a42;
+  font-weight: 600;
+  color: white;
+}
+.banner-btn-one:hover {
+  color: white;
+}
+.banner-btn-two {
+  background: #ccc;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+  .banner-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+  .banner-btn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-heading {
+    font-size: 40px;
+  }
+}
+.getStarted img {
+  width: 320px;
+  height: 320px;
+}
+.getStarted-content {
+  text-align: center;
+  margin-top: 40px;
+}
+.getStarted-heading {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .getStarted-img {
+    display: none !important;
+  }
+}
+.footer {
+  background: #461a42;
+  padding: 30px 0;
+}
+.footer-left {
+  color: white;
+}
+.footer-logo {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: block;
+}
+.footer-logo:hover {
+  color: white;
+}
+.footer-p {
+  color: #eee;
+}
+.footer-center-item a {
+  color: white;
+  padding: 5px 0;
+  display: block;
+}
+.footer-right {
+  color: white;
+}
+.footer-link-img {
+  width: 200px;
+  display: block;
+  margin: 10px 0;
+}
+
 /*# sourceMappingURL=app.css.map */

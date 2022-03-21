@@ -1,0 +1,77 @@
+.banner {
+  padding: 20px 0;
+
+  &-left {
+    padding-top: 30px;
+  }
+  &-heading {
+    max-width: 400px;
+    font-size: 50px;
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+  &-desc {
+    font-size: 17px;
+    color: rgb(155, 153, 153);
+  }
+  &-btn {
+    &-one {
+      background: $primary-color;
+      font-weight: 600;
+      color: white;
+      &:hover {
+        color: white;
+      }
+    }
+
+    &-two {
+      background: #ccc;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .banner {
+    &-heading {
+      max-width: 100%;
+      text-align: center;
+    }
+    &-btn {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
+  .banner {
+    &-heading {
+      font-size: 40px;
+    }
+  }
+}
+
+.getStarted {
+  & img {
+    width: 320px;
+    height: 320px;
+  }
+  &-content {
+    text-align: center;
+    margin-top: 40px;
+  }
+  &-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .getStarted {
+    &-img {
+      display: none !important;
+    }
+  }
+}

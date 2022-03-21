@@ -36,3 +36,21 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .header {
+    & nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    &-account {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
