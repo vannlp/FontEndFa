@@ -2,6 +2,8 @@
 import router from "./web.js";
 import { home } from "./controllers/home.js";
 import {about} from "./controllers/about.js";
+import {quiz} from "./controllers/quiz.js";
+import {quizDetail} from "./controllers/quizDetail.js"
 
 let app = angular.module("myApp", ["ngRoute"]);
 
@@ -15,3 +17,5 @@ router(app);
 
 home(app);
 about(app);
+quiz(app);
+quizDetail(app);

@@ -11,11 +11,14 @@ function router(app) {
       .when("/about", {
         templateUrl: "./page/about.html",
         controller : "aboutController"
-      })
-      .when("/news", {
-        templateUrl: "./page/news.html",
       }).when("/gioi-thieu", {
         templateUrl: "./page/gioi_thieu.html",
+      }).when("/quiz",{
+        templateUrl: "./page/quiz.html",
+        controller : "quizController"
+      }).when("/quiz/:quizId",{
+        templateUrl: "./page/quiz-detail.html",
+        controller : "quizDetailController"
       });
   });
 }
