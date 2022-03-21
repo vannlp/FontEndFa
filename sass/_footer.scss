@@ -35,3 +35,12 @@
     margin: 10px 0;
   }
 }
+
+@media screen and(max-width: 500px) {
+  .footer {
+    text-align: center;
+    &-link-img {
+      margin: 20px auto;
+    }
+  }
+}

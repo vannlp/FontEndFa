@@ -160,4 +160,13 @@ img {
   margin: 10px 0;
 }
 
+@media screen and (max-width: 500px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-link-img {
+    margin: 20px auto;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
