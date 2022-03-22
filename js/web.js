@@ -23,6 +23,15 @@ function router(app) {
             }).when("/call", {
                 templateUrl: "./page/call.html",
                 controller: "callController"
+            }).when("/registration", {
+                templateUrl: "./page/registration.html",
+                controller: "callController"
+            }).when("/ForgotPass", {
+                templateUrl: "./page/ForgotPass.html",
+                controller: "callController"
+            }).when("/login", {
+                templateUrl: "./page/login.html",
+                controller: "callController"
             });
     });
 }
