@@ -31,7 +31,7 @@ function router(app) {
                 controller: "callController"
             }).when("/login", {
                 templateUrl: "./page/login.html",
-                controller: "callController"
+                controller: "loginController"
             });
     });
 }
