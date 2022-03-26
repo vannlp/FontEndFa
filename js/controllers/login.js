@@ -33,9 +33,17 @@ function login(app){
 
             alert("Đăng nhập thành công");
 
-            window.location("/home");
+            window.location.href = "/";
         }
     });
 }
 
-export {login};
+function logout(app){
+    app.controller("logoutController",($scope)=>{
+        sessionStorage.removeItem('login');
+
+        window.location.href = "/";
+    })
+}
+
+export {login, logout};
