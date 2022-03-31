@@ -25,7 +25,14 @@
         </ul>
       </nav>
       <div class="col-xl-3 col-md-6 col-xs-12">
-        <div class="header-account" ng-bind-html="accountView"></div>
+        <div class="header-account" ng-if="checkLogin.check == true">
+          <span>{{checkLogin.name}}</span>
+          <a href="" ng-click="logout()">Đăng xuất</a>
+        </div>
+        <div class="header-account" ng-if="checkLogin.check == false">
+          <a href="#!login" class="btn fw-bolder">Đăng Nhập</a>
+          <a href="#!registration" class="btn bg-warning fw-bolder">Đăng ký</a>
+        </div>
         <!-- Modal -->
         <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -66,3 +73,15 @@
     </div>
   </div>
 </header>
+
+<!-- <script>
+  let app1 = angular.module("myApp", []);
+  app1.controller("headerController", function ($scope) {
+    $scope.logout = function () {
+      console.log("logout");
+      // sessionStorage.removeItem('login');
+
+      // window.location.href = "/";
+    };
+  });
+</script> -->

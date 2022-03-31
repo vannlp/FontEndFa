@@ -5,27 +5,30 @@ import { quiz } from "./controllers/quiz.js";
 import { quizDetail } from "./controllers/quizDetail.js";
 import { takeQuiz } from "./controllers/takeQuiz.js";
 import { call } from "./controllers/call.js";
-import {login, logout} from "./controllers/login.js";
+import {login} from "./controllers/login.js";
 
 let app = angular.module("myApp", ["ngRoute"]);
 
 app.run(async function($rootScope, $http, $sce) {
     if(sessionStorage['login']){
-
         let user = JSON.parse(sessionStorage['login']);
-
-
-        $rootScope.accountView = $sce.trustAsHtml(`
-            <span>${user.name}</span>
-            <a href="#!logout">Đăng xuất</a>
-        `);
+        $rootScope.checkLogin = {
+            check: true,
+            name: user.name 
+        };
     }else{
-        $rootScope.accountView = $sce.trustAsHtml(`
-        <a href="#!login" class="btn  fw-bolder">Đăng Nhập</a>
-        <a href="#!registration" class="btn bg-warning fw-bolder">Đăng ký</a>
-        `);
+        $rootScope.checkLogin = {
+            check: false,
+            name: null 
+        };
+    }
+
+    $rootScope.logout = function(){
+        sessionStorage.clear('login');
+        window.location = "/";
     }
 });
+
 
 router(app);
 
@@ -35,4 +38,3 @@ quiz(app);
 quizDetail(app);
 takeQuiz(app);
 login(app);
-logout(app);

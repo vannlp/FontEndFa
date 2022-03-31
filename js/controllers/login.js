@@ -38,12 +38,5 @@ function login(app){
     });
 }
 
-function logout(app){
-    app.controller("logoutController",($scope)=>{
-        sessionStorage.removeItem('login');
 
-        window.location.href = "/";
-    })
-}
-
-export {login, logout};
+export {login};

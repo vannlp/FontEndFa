@@ -32,8 +32,6 @@ function router(app) {
             }).when("/login", {
                 templateUrl: "./page/login.html",
                 controller: "loginController"
-            }).when("/logout",{
-                controller: 'logoutController'
             });
     });
 }
