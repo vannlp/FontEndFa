@@ -9,18 +9,15 @@
   <section class="quizDetail-top mt-2 mb-2 rounded">
     <div class="row">
       <div class="col-xl-2">
-        <img src="../images/logos/ADBS.jpg" alt="" />
+        <img src="../images/logos/{{quiz.img}}" alt="" />
       </div>
 
       <div class="col-xl-8">
-        <h2 class="quizDetail-title">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-          modi tempore
-        </h2>
+        <h2 class="quizDetail-title">{{quiz.name}}</h2>
       </div>
 
       <div class="col-xl-2 d-flex align-items-center">
-        <a href="#!quiz/quiz1/take" class="btn btn-primary">Làm ngay</a>
+        <a href="#!quiz/{{quiz.id}}/take" class="btn btn-primary">Làm ngay</a>
       </div>
     </div>
   </section>
@@ -28,11 +25,6 @@
   <section class="quizDetail-top mb-2 rounded">
     <h3>Chi tiết bài quiz</h3>
 
-    <div>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
-      rerum nisi praesentium doloribus inventore necessitatibus, illum
-      doloremque repellat unde voluptates reiciendis commodi est tenetur
-      obcaecati labore rem, vitae adipisci fuga.
-    </div>
+    <div>{{quiz.description}}</div>
   </section>
 </div>

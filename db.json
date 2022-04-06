@@ -12,16 +12,25 @@
     "subjects":[
         {
             "Id": "ADAV",
-            "Name": "Lập trình Android nâng cao",
+            "Name": "Quiz về backend",
             "Logo": "ADAV.jpg"
         }
     ],
 
     "quizs":[
         {
-            "name": "Ten bai quiz",
+            "name": "Quiz về ngôn ngữ php",
+            "img": "ADAV.jpg",
             "id":1,
-            "subjectId": 1
+            "subjectId": 1,
+            "description":"Quiz về ngôn ngữ phpQuiz về ngôn ngữ phpQuiz về ngôn ngữ php"
+        },
+        {
+            "name": "Quiz về ngôn ngữ nodeJS",
+            "img": "JSPR.png",
+            "id":2,
+            "subjectId": 1,
+            "description":"Làm quiz về ngôn ngữ nodejs ngay - Node JS được làm bằng ngôn ngữ JS chuyên cho các ngôn ngữ backend"
         }
     ],
 
@@ -29,36 +38,90 @@
         {
             "id": 1,
             "quizId": 1,
-            "title": "PHP là gì"
+            "title": "PHP là gì",
+            "mark": 1,
+            "answers":[
+                {
+                    "id":1,
+                    "quizDetailId": 1,
+                    "desc": "Ngôn ngữ lập trình"
+                },
+                {
+                    "id":2,
+                    "quizDetailId": 1,
+                    "desc": "Ngôn ngữ loài người"
+                },
+                {
+                    "id":3,
+                    "quizDetailId": 1,
+                    "desc": "Ngôn ngữ động vật"
+                },
+                {
+                    "id":4,
+                    "quizDetailId": 1,
+                    "desc": "Ngôn ngữ gì đó"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "quizId": 1,
+            "title": "PHP là ngôn ngữ chuyên làm mảng nào",
+            "mark": 1,
+            "answers":[
+                {
+                    "id":1,
+                    "quizDetailId": 1,
+                    "desc": "Web"
+                },
+                {
+                    "id":2,
+                    "quizDetailId": 1,
+                    "desc": "Mobile"
+                },
+                {
+                    "id":3,
+                    "quizDetailId": 1,
+                    "desc": "App"
+                },
+                {
+                    "id":4,
+                    "quizDetailId": 1,
+                    "desc": "Game"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "quizId": 1,
+            "title": "Phiên bản php mới nhất là",
+            "mark": 4,
+            "answers":[
+                {
+                    "id":1,
+                    "quizDetailId": 1,
+                    "desc": 8
+                },
+                {
+                    "id":2,
+                    "quizDetailId": 1,
+                    "desc": 7
+                },
+                {
+                    "id":3,
+                    "quizDetailId": 1,
+                    "desc": 6
+                },
+                {
+                    "id":4,
+                    "quizDetailId": 1,
+                    "desc": 8.1
+                }
+            ]
         }
     ],
 
-    "answerQuizs":[
-        {
-            "id":1,
-            "quizDetailId": 1,
-            "desc": "Ngôn ngữ lập trình",
-            "correct_answer": true
-        },
-        {
-            "id":2,
-            "quizDetailId": 1,
-            "desc": "Ngôn ngữ loài người",
-            "correct_answer": false
-        },
-        {
-            "id":3,
-            "quizDetailId": 1,
-            "desc": "Ngôn ngữ động vật",
-            "correct_answer": false
-        },
-        {
-            "id":4,
-            "quizDetailId": 1,
-            "desc": "Ngôn ngữ gì đó",
-            "correct_answer": false
-        }
-    ],
+    
 
     "quizs_history":[
         {
