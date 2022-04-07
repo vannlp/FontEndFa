@@ -50,50 +50,14 @@
   <div class="container">
     <h2 class="quizTest-heading mb-4">Danh mục bài quiz</h2>
     <div class="row">
-      <div class="col-xl-3 col-md-6 col-xs-12 mb-2">
+      <div
+        class="col-xl-3 col-md-6 col-xs-12 mb-2"
+        ng-repeat="x in dataSubjects"
+      >
         <div class="card">
-          <img src="../images/logos/ADAV.jpg" class="card-img-top" alt="" />
+          <img src="{{x.Logo}}" class="card-img-top" alt="" />
           <div class="card-body">
-            <h5 class="card-title">Lập trình Moblile</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn banner-btn-one">Xem thêm</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-xs-12 mb-2">
-        <div class="card">
-          <img src="../images/logos/ADAV.jpg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Lập trình Moblile</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn banner-btn-one">Xem thêm</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-xs-12 mb-2">
-        <div class="card">
-          <img src="../images/logos/ADAV.jpg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Lập trình Moblile</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn banner-btn-one">Xem thêm</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-3 col-md-6 col-xs-12 mb-2">
-        <div class="card">
-          <img src="../images/logos/ADAV.jpg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <h5 class="card-title">Lập trình Moblile</h5>
+            <h5 class="card-title">{{x.Name}}</h5>
             <p class="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.

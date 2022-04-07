@@ -34,10 +34,6 @@ function takeQuiz(app){
 
             checkBtn();
             function addAnwsers(){
-                // let anwser = {
-                //     'id' : index,
-                //     'id_quiz': $scope.answer
-                // };
                 anwsers.forEach((val, i)=>{
                     if(index === i){
                         anwsers[i].id_aw = $scope.answer;
