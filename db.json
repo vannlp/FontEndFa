@@ -32,7 +32,7 @@
       "name": "Quiz về ngôn ngữ nodeJS",
       "img": "JSPR.png",
       "id": 2,
-      "subjectId": 1,
+      "subjectId": 2,
       "description": "Làm quiz về ngôn ngữ nodejs ngay - Node JS được làm bằng ngôn ngữ JS chuyên cho các ngôn ngữ backend"
     }
   ],
