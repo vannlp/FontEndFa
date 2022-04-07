@@ -1,7 +1,7 @@
 <div class="container mt-3">
   <div class="card">
     <div class="card-header">
-      <h4>{{name}}</h4>
+      <h4>{{counter}}</h4>
     </div>
     <div class="card-body">
       <h4 class="card-title mb-3">{{quizAs.title}}</h4>
@@ -29,9 +29,48 @@
       <button ng-click="next()" ng-show="checkNext" class="btn btn-primary">
         Next
       </button>
-      <button ng-click="ketthuc()" ng-show="!checkNext" class="btn btn-primary">
+      <button
+        ng-click="ketthuc()"
+        ng-show="!checkNext"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
         Kết thúc
       </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tổng kết</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <span><b>Số câu:</b> {{soCau}}</span><br />
+        <span><b>Số câu đúng:</b> {{soCauDung}}</span><br />
+        <span><b>Tổng điểm:</b> {{Diem}}</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="saveQuiz()">
+          Ra trang chủ
+        </button>
+      </div>
     </div>
   </div>
 </div>

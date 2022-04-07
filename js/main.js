@@ -6,6 +6,7 @@ import { quizDetail } from "./controllers/quizDetail.js";
 import { takeQuiz } from "./controllers/takeQuiz.js";
 import { call } from "./controllers/call.js";
 import {login} from "./controllers/login.js";
+import {register} from "./controllers/register.js";
 
 let app = angular.module("myApp", ["ngRoute"]);
 

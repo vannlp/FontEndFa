@@ -1,11 +1,53 @@
 function takeQuiz(app){
-    app.controller("takeQuizController", function($scope,$http, $routeParams){
+    app.controller("takeQuizController", function($scope,$http, $routeParams, $timeout){
+        if(!sessionStorage['login']){
+            window.location.href = "#!/login";
+        }   
+
+
         let quizId = $routeParams.quizId;
+        $scope.soCau = 0;
+        $scope.soCauDung = 0;
+        $scope.Diem = 0;
+
+        
+        
         $http.get(`http://localhost:3000/quizDetails?quizId=${quizId}`).then((res)=>{
             let dataQuiz = res.data;
             let index = 0;
             let point = 0;
             let anwsers = [];
+            let cauDung = 0;
+
+
+
+            var p = 10 - 1;
+            var g = 59;
+            $scope.counter = p + ":" + g;
+
+            $scope.onTimeout = function(){
+                if(g != 0)
+                {
+                    g--;
+                }
+                else
+                {
+                    p--;
+                    g = 59;
+                }
+                if(p == 0 && g == 0)
+                {
+                    alert("Hết giờ");
+                }
+                $scope.counter = p + ":" + g;
+                mytimeout = $timeout($scope.onTimeout,1000);
+
+                if(p == 0 && g == 0)
+                {
+                    $timeout.cancel(mytimeout);
+                }
+            }
+            var mytimeout = $timeout($scope.onTimeout,1000);
 
             for(let i = 0; i < dataQuiz.length; i++){
                 let a = {
@@ -59,6 +101,7 @@ function takeQuiz(app){
                 anwsers.forEach((val, i)=>{
                     if(dataQuiz[i].mark == val.id_aw){
                         point += m;
+                        cauDung++;
                     } 
                 })
 
@@ -82,6 +125,27 @@ function takeQuiz(app){
                 addAnwsers();
                 HAnwsers();
                 scorePoint();
+                endQuiz();
+            }
+
+            function endQuiz () {
+                $scope.soCau = anwsers.length;
+                $scope.Diem = point;
+                $scope.soCauDung = cauDung;
+            }
+
+            $scope.saveQuiz = ()=>{
+                let userid = JSON.parse(sessionStorage['login']).username;
+                let now = new Date();
+                let dataPost = {
+                   "quizId":quizId,
+                    "username":userid,
+                    "created_date": now,
+                    "point": point
+                };
+                $http.post("http://localhost:3000/quizs_history", dataPost).then((res)=>{
+                    window.location.href = "/";
+                });
             }
         })
     });
