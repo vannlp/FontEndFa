@@ -5,7 +5,16 @@
       "email": "phanvan0322@gmail.com",
       "password": "123456",
       "name": "Phan Tuong Van",
-      "role": 1
+      "role": 1,
+      "id": 1
+    },
+    {
+      "username": "phanvan0322",
+      "password": "123456",
+      "email": "phanvan0322123@gmail.com",
+      "name": "Phan Tường Văn",
+      "role": 2,
+      "id": 2
     }
   ],
   "subjects": [
@@ -118,6 +127,62 @@
           "id": 4,
           "quizDetailId": 1,
           "desc": 8.1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "quizId": 2,
+      "title": "NodeJS là gì",
+      "mark": 3,
+      "answers": [
+        {
+          "id": 1,
+          "quizDetailId": 1,
+          "desc": "adjjksag"
+        },
+        {
+          "id": 2,
+          "quizDetailId": 1,
+          "desc": "adjfkjk"
+        },
+        {
+          "id": 3,
+          "quizDetailId": 1,
+          "desc": "adfhjk"
+        },
+        {
+          "id": 4,
+          "quizDetailId": 1,
+          "desc": "akgnxjnzvyu"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "quizId": 2,
+      "title": "NodeJS là gì 2",
+      "mark": 3,
+      "answers": [
+        {
+          "id": 1,
+          "quizDetailId": 1,
+          "desc": "adjjksag"
+        },
+        {
+          "id": 2,
+          "quizDetailId": 1,
+          "desc": "adjfkjk"
+        },
+        {
+          "id": 3,
+          "quizDetailId": 1,
+          "desc": "adfhjk"
+        },
+        {
+          "id": 4,
+          "quizDetailId": 1,
+          "desc": "akgnxjnzvyu"
         }
       ]
     }

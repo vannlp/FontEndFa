@@ -25,7 +25,7 @@ function router(app) {
                 controller: "callController"
             }).when("/registration", {
                 templateUrl: "./page/registration.html",
-                controller: "RegisterController"
+                controller: "registerController"
             }).when("/ForgotPass", {
                 templateUrl: "./page/ForgotPass.html",
                 controller: "callController"

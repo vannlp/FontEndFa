@@ -39,3 +39,4 @@ quiz(app);
 quizDetail(app);
 takeQuiz(app);
 login(app);
+register(app);
