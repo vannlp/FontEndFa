@@ -2,11 +2,11 @@
   "users": [
     {
       "username": "phanvan0322",
-      "email": "phanvan0322@gmail.com",
+      "email": "admin123@gmail.com",
+      "name": "admin123",
+      "id": 1,
       "password": "123456",
-      "name": "Phan Tuong Van",
-      "role": 1,
-      "id": 1
+      "role": 1
     },
     {
       "username": "phanvan0322",
@@ -208,6 +208,20 @@
       "created_date": "2022-04-07T14:36:30.184Z",
       "point": 10,
       "id": 3
+    },
+    {
+      "quizId": "1",
+      "username": "phanvan0322",
+      "created_date": "2022-04-09T14:59:25.464Z",
+      "point": 0,
+      "id": 4
+    },
+    {
+      "quizId": "1",
+      "username": "phanvan0322",
+      "created_date": "2022-04-09T15:04:52.221Z",
+      "point": 0,
+      "id": 5
     }
   ]
 }

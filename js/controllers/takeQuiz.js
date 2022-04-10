@@ -21,29 +21,32 @@ function takeQuiz(app){
 
 
 
-            var p = 10 - 1;
-            var g = 59;
+            var p = 1 - 1;
+            var g = 10;
             $scope.counter = p + ":" + g;
 
             $scope.onTimeout = function(){
-                if(g != 0)
-                {
+                if(g != 0) {
                     g--;
                 }
-                else
-                {
+                else {
                     p--;
                     g = 59;
                 }
-                if(p == 0 && g == 0)
-                {
+                if(p == 0 && g == 0) {
                     alert("Hết giờ");
+                    addAnwsers();
+                    HAnwsers();
+                    scorePoint();
+                    endQuiz();
+                    document.getElementById("exampleModal").style.display = "block";
+                    document.getElementById("exampleModal").classList.add('show');
+
                 }
                 $scope.counter = p + ":" + g;
                 mytimeout = $timeout($scope.onTimeout,1000);
 
-                if(p == 0 && g == 0)
-                {
+                if(p == 0 && g == 0) {
                     $timeout.cancel(mytimeout);
                 }
             }

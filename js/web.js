@@ -32,6 +32,9 @@ function router(app) {
             }).when("/login", {
                 templateUrl: "./page/login.html",
                 controller: "loginController"
+            }).when("/updateUser", {
+                templateUrl: "./page/updateUser.html",
+                controller: "updateUserController"
             });
     });
 }

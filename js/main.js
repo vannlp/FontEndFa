@@ -7,6 +7,7 @@ import { takeQuiz } from "./controllers/takeQuiz.js";
 import { call } from "./controllers/call.js";
 import {login} from "./controllers/login.js";
 import {register} from "./controllers/register.js";
+import {updateUser} from "./controllers/updateUser.js";
 
 let app = angular.module("myApp", ["ngRoute"]);
 
@@ -40,3 +41,4 @@ quizDetail(app);
 takeQuiz(app);
 login(app);
 register(app);
+updateUser(app);

@@ -28,7 +28,8 @@ function login(app){
                 'email': user.email,
                 'username': user.username,
                 'name': user.name,
-                'role': user.role
+                'role': user.role,
+                'id': user.id
             });
 
             alert("Đăng nhập thành công");

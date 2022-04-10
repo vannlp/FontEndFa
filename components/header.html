@@ -26,9 +26,16 @@
       </nav>
       <div class="col-xl-3 col-md-6 col-xs-12">
         <div class="header-account" ng-if="checkLogin.check == true">
-          
-          <span>{{checkLogin.name}}</span>
-          <a href="" ng-click="logout()">Đăng xuất</a>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              {{checkLogin.name}}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <a class="dropdown-item" href="#!updateUser">Cập nhật</a>
+              <li><hr class="dropdown-divider"></li>
+              <a class="dropdown-item info" href="" ng-click="logout()">Đăng xuất</a>
+            </ul>
+          </div>
         </div>
         <div class="header-account" ng-if="checkLogin.check == false">
           <a href="#!login" class="btn fw-bolder">Đăng Nhập</a>
