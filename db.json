@@ -15,6 +15,14 @@
       "name": "Phan Tường Văn",
       "role": 2,
       "id": 2
+    },
+    {
+      "username": "quangdu",
+      "password": "12345",
+      "email": "quangdu2082k2@gmail.com",
+      "name": "Quang Dự",
+      "role": 2,
+      "id": 3
     }
   ],
   "subjects": [
@@ -31,18 +39,18 @@
   ],
   "quizs": [
     {
-      "name": "Quiz về ngôn ngữ php",
+      "name": "Ngôn ngữ php",
       "img": "ADAV.jpg",
       "id": 1,
       "subjectId": 1,
       "description": "Quiz về ngôn ngữ phpQuiz về ngôn ngữ phpQuiz về ngôn ngữ php"
     },
     {
-      "name": "Quiz về ngôn ngữ nodeJS",
+      "name": "Ngôn ngữ nodeJS",
       "img": "JSPR.png",
       "id": 2,
       "subjectId": 2,
-      "description": "Làm quiz về ngôn ngữ nodejs ngay - Node JS được làm bằng ngôn ngữ JS chuyên cho các ngôn ngữ backend"
+      "description": "Quiz về ngôn ngữ nodejs - Node JS được làm cho các ngôn ngữ backend"
     },
     {
       "name": "Quiz về ReactJS",
@@ -1033,7 +1041,6 @@
         }
       ]
     }
-
   ],
   "quizs_history": [
     {
