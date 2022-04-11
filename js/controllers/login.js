@@ -12,12 +12,13 @@ function login(app){
 
             let checkEmail = await $http.get("http://localhost:3000/users?email=" + email);
             
-            if(!checkEmail){
+            if(checkEmail.data.length === 0){
                 alert("Tài khoản email không tồn tại");
                 return;
             }
 
             let user = checkEmail.data[0];
+
 
             if(user.password != pass){
                 alert("Mật khẩu không đúng")

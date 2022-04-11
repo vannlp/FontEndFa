@@ -21,8 +21,8 @@ function takeQuiz(app){
 
 
 
-            var p = 1 - 1;
-            var g = 10;
+            var p = 6 - 1;
+            var g = 59;
             $scope.counter = p + ":" + g;
 
             $scope.onTimeout = function(){
